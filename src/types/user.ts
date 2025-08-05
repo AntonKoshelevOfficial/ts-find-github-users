@@ -1,37 +1,36 @@
 export type LocalGithubUser = {
-    login: string,
-    id: number,
-    avatar: string
-    name: string,
-    company: string,
-    blog: string,
-    location: string,
     bio: string,
-    twitter: string,
+    name: string,
+    blog: string,
     repos: number,
+    login: string,
+    avatar: string
+    company: string,
+    created: string,
+    twitter: string,
+    location: string,
     followers: number,
     following: number,
-    created: string,
 }
 
 export type GitHubUser = {
-    login: string,
     id: number,
-    avatar_url: string
-    name: string,
-    company: string,
-    blog: string,
-    location: string,
     bio: string,
-    twitter_username: string,
-    public_repos: number,
+    name: string,
+    blog: string,
+    login: string,
+    company: string,
+    location: string,
     followers: number,
     following: number,
     created_at: string,
+    avatar_url: string
+    public_repos: number,
+    twitter_username: string,
 }
 
 export type GitHubError = {
+    status: string
     message: string,
     documentation_url: string,
-    status: string
 }
